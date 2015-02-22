@@ -28,7 +28,7 @@ complexNumber computeX2(float a, float b, float c) {
     double delta;
     delta  = computeDeterminant(a, b, c);
     if(delta < 0) {
-        r.re = b;
+        r.re = -b;
         r.im = -sqrt(-delta);
     }
     else {
