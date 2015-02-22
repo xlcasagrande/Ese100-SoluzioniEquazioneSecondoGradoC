@@ -8,7 +8,7 @@ float computeDeterminant(float a, float b, float c) {
 
 complexNumber computeX1(float a, float b, float c) {
     complexNumber r;
-    double delta;
+    float delta;
     delta  = computeDeterminant(a, b, c);
     if(delta < 0) {
         r.re = -b;
@@ -25,7 +25,7 @@ complexNumber computeX1(float a, float b, float c) {
 
 complexNumber computeX2(float a, float b, float c) {
     complexNumber r;
-    double delta;
+    float delta;
     delta  = computeDeterminant(a, b, c);
     if(delta < 0) {
         r.re = -b;
